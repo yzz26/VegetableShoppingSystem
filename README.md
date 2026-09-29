@@ -29,6 +29,7 @@
 
 ## 📁 项目结构
 
+```text
 VegetableShoppingSystem/
 ├── src/
 │   └── main/
@@ -89,19 +90,20 @@ VegetableShoppingSystem/
 
 2. **配置数据库连接**
 
-复制 src/main/resources/db.properties.example 为 db.properties，修改你的数据库账号密码：
+   复制 src/main/resources/db.properties.example 为 db.properties，修改你的数据库账号密码：
 
-driver=com.mysql.cj.jdbc.Driver
-url=jdbc:mysql://localhost:3306/vegetable_db?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
-user=root
-password=你的密码
+   ```properties
+   driver=com.mysql.cj.jdbc.Driver
+   url=jdbc:mysql://localhost:3306/vegetable_db?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+   user=root
+   password=你的密码
 
 3. **配置 Tomcat 并部署**
-在 IDEA 中配置 Tomcat，部署 VegetableShoppingSystem:war exploded。
+   在 IDEA 中配置 Tomcat，部署 VegetableShoppingSystem:war exploded。
 
 4. **访问系统**
 
-http://localhost:8080/VegetableShoppingSystem_war_exploded/ProductListServlet
+   http://localhost:8080/VegetableShoppingSystem_war_exploded/ProductListServlet
 
 作者
 GitHub：@yzz26
