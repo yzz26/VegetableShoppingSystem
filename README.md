@@ -46,7 +46,7 @@ VegetableShoppingSystem/
 │           ├── result.jsp   # 结算结果
 │           └── WEB-INF/web.xml
 └── pom.xml
-
+```
 
 ## 🗄️ 数据库设计
 
@@ -97,6 +97,7 @@ VegetableShoppingSystem/
    url=jdbc:mysql://localhost:3306/vegetable_db?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
    user=root
    password=你的密码
+   ```
 
 3. **配置 Tomcat 并部署**
    在 IDEA 中配置 Tomcat，部署 VegetableShoppingSystem:war exploded。
