@@ -31,19 +31,19 @@
 
 VegetableShoppingSystem/
 ├── src/
-│ └── main/
-│ ├── java/com/hbdf/
-│ │ ├── bean/ # Product、CartItem
-│ │ ├── dao/ # ProductDao、CartDao
-│ │ ├── servlet/ # 各功能 Servlet
-│ │ └── util/ # DBUtil 数据库工具类
-│ ├── resources/
-│ │ └── db.properties.example
-│ └── webapp/
-│ ├── products.jsp # 商品列表
-│ ├── cart.jsp # 购物车
-│ ├── result.jsp # 结算结果
-│ └── WEB-INF/web.xml
+│   └── main/
+│       ├── java/com/hbdf/
+│       │   ├── bean/        # Product、CartItem
+│       │   ├── dao/         # ProductDao、CartDao
+│       │   ├── servlet/     # 各功能 Servlet
+│       │   └── util/        # DBUtil 数据库工具类
+│       ├── resources/
+│       │   └── db.properties.example
+│       └── webapp/
+│           ├── products.jsp # 商品列表
+│           ├── cart.jsp     # 购物车
+│           ├── result.jsp   # 结算结果
+│           └── WEB-INF/web.xml
 └── pom.xml
 
 
@@ -87,20 +87,19 @@ VegetableShoppingSystem/
    USE vegetable_db;
    -- 执行项目中的建表与数据插入 SQL
 
-2.**配置数据库连接**
+2. **配置数据库连接**
 
 复制 src/main/resources/db.properties.example 为 db.properties，修改你的数据库账号密码：
 
-properties
 driver=com.mysql.cj.jdbc.Driver
 url=jdbc:mysql://localhost:3306/vegetable_db?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
 user=root
 password=你的密码
 
-3.**配置 Tomcat 并部署**
+3. **配置 Tomcat 并部署**
 在 IDEA 中配置 Tomcat，部署 VegetableShoppingSystem:war exploded。
 
-4.**访问系统**
+4. **访问系统**
 
 http://localhost:8080/VegetableShoppingSystem_war_exploded/ProductListServlet
 
